@@ -1,0 +1,15 @@
+.directory
+*.log
+.env
+.byebug_history
+
+config/master.key
+config/database.yml
+
+/tmp/*
+/log/*
+!/log/.keep
+!/tmp/.keep
+
+/.bundle
+/node_modules
