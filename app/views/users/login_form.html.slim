@@ -1,0 +1,9 @@
+div style='background-color: gray'
+  h1 Auth
+  = form_for User.new, url: login_user_path, method: 'post' do |f|
+    p email
+    p= f.text_field :email
+    p password
+    p= f.password_field :password
+    p= submit_tag 'Send'
+  = render_flash

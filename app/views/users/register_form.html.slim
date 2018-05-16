@@ -1,0 +1,10 @@
+div style='background-color: gray'
+  h1 Register
+  = form_for User.new, url: register_user_path, method: 'post' do |f|
+    p email
+    p= f.text_field :email
+    p password
+    p= f.password_field :password
+    p= submit_tag 'Send'
+  = render_flash
+  = render_errors @user

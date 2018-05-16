@@ -1,0 +1,5 @@
+h1
+  | Hello, 
+  = current_user.email
+
+= link_to 'Log out', logout_user_path, method: 'post'
